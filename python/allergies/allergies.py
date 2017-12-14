@@ -20,4 +20,4 @@ class Allergies(object):
 
     @property
     def lst(self):
-        return [key for key in allergy_map.keys() if self.is_allergic_to(key)]
+        return [key for key in allergy_map if self.is_allergic_to(key)]

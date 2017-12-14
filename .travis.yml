@@ -12,8 +12,9 @@ python:
   # - "3.7-dev" # 3.7 development branch
   # - "nightly"
 # command to install dependencies
-# install:
-#   - pip install -r requirements.txt
+ install:
+   - pip install -r requirements.txt
 # command to run tests
 script:
-  - python -m unittest discover python "*_test.py"
+  - pytest
+  - pytest --pep8

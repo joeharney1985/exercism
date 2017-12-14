@@ -2,7 +2,7 @@ import string
 
 
 def rot_char(c, key):
-    if not c in string.ascii_letters:
+    if c not in string.ascii_letters:
         return c
     offset = ord('a') if c.islower() else ord('A')
     return chr((ord(c) - offset + key) % 26 + offset)

@@ -19,6 +19,7 @@ n_week_map = {
     'last': -1,
 }
 
+
 def all_days_that_match_dow(year, month, day_of_the_week):
     first_of_month = datetime.date(year=year, month=month, day=1)
     first_of_month_dow = first_of_month.weekday()
@@ -34,6 +35,7 @@ def all_days_that_match_dow(year, month, day_of_the_week):
         out.append(foo)
         foo += datetime.timedelta(days=7)
     return out
+
 
 def meetup_day(year, month, day_of_the_week, which):
     which = which.lower()

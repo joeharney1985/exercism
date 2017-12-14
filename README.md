@@ -1,6 +1,6 @@
 # exercism
 
-https://travis-ci.org/joeharney1985/exercism.svg?branch=master
+[![Build Status](https://travis-ci.org/joeharney1985/exercism.svg?branch=master)](https://travis-ci.org/joeharney1985/exercism.svg?branch=master)
 
 Trying out exercisim.io.
 

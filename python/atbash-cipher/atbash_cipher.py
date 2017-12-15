@@ -6,7 +6,7 @@ except ImportError:
     maketans = str.maketrans
 
 
-CIPHER = maketrans(string.ascii_letters, string.ascii_lowercase[::-1])
+CIPHER = maketrans(string.ascii_lowercase, string.ascii_lowercase[::-1])
 remove = string.whitespace + string.punctuation
 
 
@@ -15,7 +15,7 @@ def add_spaces(ciphered_text):
 
 
 def encode(plain_text):
-    return add_spaces(plain_text.translate(CIPHER, remove))
+    return add_spaces(plain_text.lower().translate(CIPHER, remove))
 
 
 def decode(ciphered_text):

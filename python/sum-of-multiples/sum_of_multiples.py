@@ -1,8 +1,9 @@
-def multiples_to(limit, base):
-    multiple = base
-    while num < limit:
-        yield multiple
-        multiple += base
+import math
 
-def sum_of_multiples(limit, multiples):
-    return sum(sum(multiples_to(limit, m)) for m in multiples)
+
+def multiples_to(limit, base):
+    return [base * i for i in range(1, int(math.ceil(limit / float(base))))]
+
+
+def sum_of_multiples(limit, bases):
+    return sum(set([m for b in bases for m in multiples_to(limit, b)]))

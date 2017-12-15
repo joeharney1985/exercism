@@ -3,7 +3,7 @@ import re
 try:
     from string import maketrans
 except ImportError:
-    maketans = str.maketrans
+    maketrans = str.maketrans
 
 
 CIPHER = maketrans(string.ascii_lowercase, string.ascii_lowercase[::-1])
